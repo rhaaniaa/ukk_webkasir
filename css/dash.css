@@ -1,0 +1,180 @@
+/* General Body Style */
+body {
+    background-color: #f8bbd0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar Style */
+.navbar {
+    background-color: #f06292; /* Pink lebih terang */
+    padding: 5px; /* Sesuaikan padding agar tidak terlalu besar */
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Pastikan navbar tetap di atas */
+    margin: 0; /* Hilangkan margin ekstra */
+    height: 50px; /* Atur tinggi navbar agar tidak terlalu besar */
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 1.3rem; /* Sesuaikan ukuran font agar lebih proporsional */
+    font-weight: bold;
+    line-height: 50px; /* Agar teks vertikal sejajar di tengah */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1rem;
+    line-height: 50px; /* Agar link navbar sejajar di tengah */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fce4ec; /* Hover lebih lembut */
+}
+
+/* Layout wrapper untuk sidebar dan konten */
+#layoutSidenav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px; /* Sesuaikan dengan tinggi navbar */
+    height: calc(100vh - 50px); /* Total tinggi minus navbar */
+}
+/* Mendorong navbar-nav ke kanan */
+.navbar-nav {
+    margin-left: auto;
+}
+/* Sidebar Style */
+.sb-sidenav-dark {
+    background-color: #f48fb1; /* Warna pink lembut untuk sidebar */
+    padding: 20px;
+    width: 200px; /* Lebar sidebar disesuaikan agar lebih sempit */
+    height: 100%;
+    position: fixed;
+    left: 0; /* Pastikan sidebar berada tepat di kiri */
+    top: 50px; /* Di bawah navbar */
+    overflow-y: auto;
+    z-index: 999; /* Pastikan sidebar berada di bawah navbar */
+}
+
+.sb-sidenav .nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.sb-sidenav .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sb-sidenav .nav-link i {
+    margin-right: 10px;
+}
+
+.sb-sidenav .nav-link:hover {
+    background-color: #f06292; /* Warna hover yang lebih tajam */
+    color: #fff;
+}
+
+.sb-sidenav .sb-sidenav-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8bbd0; /* Footer sidebar */
+    color: #fff;
+}
+/* Styling dropdown di navbar */
+.nav-item .dropdown-menu {
+    background-color: #f06292; /* Warna dropdown */
+    color: white;
+}
+
+.nav-item .dropdown-menu .dropdown-item {
+    color: white;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #f48fb1; /* Warna hover */
+    color: white;
+}
+
+
+/* Konten Utama */
+#layoutSidenav_content {
+    margin-left: 200px; /* Sesuaikan jarak dari sidebar */
+    padding: 20px;
+    background-color: #fff;
+    width: calc(100% - 200px); /* Kurangi lebar konten sesuai dengan sidebar */
+    overflow-y: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #f48fb1;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 20px;
+}
+
+h1 {
+    color: #212121;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling untuk Tabel Pembelian */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    color: #212121;
+}
+
+.table th, .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table th {
+    background-color: #f8bbd0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.table td a {
+    color: #f48fb1;
+}
+
+.table td a:hover {
+    text-decoration: underline;
+}
